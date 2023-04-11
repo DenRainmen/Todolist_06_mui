@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+    text-align: center ;
+	
+	height: 80vh;
+	/* background: rgb(56, 55, 55); */
+	background-image: url('./assets/background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+	.App {
+		padding: 3vw;
+	  text-align: center;
+		font-family: cursive
+	  }
+
+
+.mainInput{
+	width: 100%;
+	margin-bottom: 50px;
+	
+}
+
+.mainInput input{
+	font-size: 25px;
+	border-radius: 8px;
+}
+
+.addTitle{
+	font-size: 20px;
+    border-radius: 5px;
+	background-color: dodgerblue;
+	color: white;
+}
+
+.todolist:nth-child(odd){
+	margin: 0 50px
+}
+
+.todolist{
+	display: inline-block;
+	color: white;
+	margin-bottom: 15px;
+	font-family: Lobster, cursive;
+	background: rgb(97, 106, 105);
+	border: 1px solid #000;
+	border-radius: 20px;
+	width: max-content;
+	text-align: center;
+	padding: 10px 20px;
+	box-shadow: 0px 5px 10px 0px rgb(200, 243, 7);
+	transition: 500ms;
+	/* transform: translateY(3px); */
+	/* transform: scale(1.5); */
+	box-shadow: 5px 5px 20px 3px rgb(11, 225, 47), 5px 5px 5px rgb(6, 46, 244);
+	filter: drop-shadow(5px 5px 5px rgb(6, 46, 244));
+}
+
+h3{
+	display: inline-block;
+	font-size: 150%;
+}
+
+ul {
+	text-align: left;
+	list-style: none;
+	padding-left: 0;
+}
+
+input[type="checkbox"] {
+	accent-color: springgreen;
+}
+
+.del {
+	display: inline-block;
+	transform: rotateZ(5deg);
+	transform-origin: 50% 50% 0;
+	color: red;
+	transform: translate(3px, -7px) scale(0.8);
+	cursor: pointer;
+}
+
+.delTodolist{
+	display: inline-block;
+	transform: rotateZ(5deg);
+	transform-origin: 50% 50% 0;
+	color: red;
+	transform: translate(20px, -20px) scale(1.2);
+	cursor: pointer;
+}
+
+button:nth-child(odd) {
+	margin: 0 15px;
+}
+
+.active {
+	background: cyan;
+	transform: scale(1.2)
+}
+
+.error{
+	color: red;
+}
+
+.completedTask{
+	text-decoration: line-through;
+	
+}
